@@ -11,6 +11,18 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 }); 
 
+app.get('/jam-sesh', function(req, res) {
+	res.sendFile(__dirname + '/jam-sesh.html')
+});
+
+app.get('/demos', function(req, res) {
+	res.sendFile(__dirname + '/demos.html')
+});
+
+app.get('/resume', function(req, res) {
+	res.sendFile(__dirname + '/resume-nathaniel-le.pdf')
+});
+
 io.on('connection', function(socket) { 
 	userCount++;
 

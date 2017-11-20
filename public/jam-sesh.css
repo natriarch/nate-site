@@ -1,0 +1,51 @@
+.container-keys {
+	width: 600px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	left: 0px;
+	right: 0px;
+}
+
+.panel-middle {
+	height: 50%;
+	width: 50%;
+	margin: 0 auto 5% auto;
+	border-radius: 25px;
+	text-align: center;
+	
+}
+
+.instructions {
+	margin-top: 2%;
+}
+
+.user-count {
+	
+}
+
+html, body {
+    height: 100%;
+    min-height: 50%;
+    margin-bottom: 10px;
+	margin-top: 0px;
+	font-family: "Verdana";
+	background-color: #5EE3C1;
+}
+
+h1 {
+	margin: auto;
+	width: 50%;
+	text-align: center;
+	font-size: 75px;
+	font-family: "Verdana";
+}
+
+#home {
+	margin: auto;
+	position:absolute;
+	text-align:center;
+	font-size: 25px;
+	bottom: 10px;
+}
