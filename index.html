@@ -1,12 +1,22 @@
+<!doctype html>
 <html>
-<head>
-</head>
-<body>
-	<h1>Nathan Le</h1>
-	<ul>
-		<li>Bio</li>
-		<li>Resume</li>
-		<li>Projects</li>
-	</ul>
-</body>
-</html>
+    <head>
+        <title>Jam Sesh</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+    </head>
+    <body>
+		<div class="panel-middle">
+			<h1>JAM OVER THE WEB</h1>
+			<div class="instructions">This is a musical chatroom. Click on the keys below. Notes you play will be broadcast to other users in the chatroom.</div>
+			<div class="user-count"></div>
+			<div class="container-keys">
+				<div id='keys'></div>
+			</div>
+		</div>
+		
+		<script src="/socket.io/socket.io.js"></script>
+        <script src='qwerty-hancock.js'></script>
+        <script src='client.js'></script>
+    </body>
+</html> 
