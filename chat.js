@@ -15,15 +15,15 @@ io.on('connection', function(socket) {
 	userCount++;
 
     socket.on('note on', function (freq) {
-        socket.broadcast.emit('note on', freq); 
+        socket.emit('note on', freq); 
     });
 
     socket.on('note off', function(freq) {
-        socket.broadcast.emit('note off', freq);
+        socket.emit('note off', freq);
     });
 
     socket.on('message', function(msg) {
-        socket.broadcast.emit('message', msg); 
+        socket.emit('message', msg); 
     });
 	
 	socket.on('disconnect', function(){
