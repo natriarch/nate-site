@@ -15,6 +15,10 @@ app.get('/jam-sesh', function(req, res) {
 	res.sendFile(__dirname + '/jam-sesh.html')
 });
 
+app.get('/text-adventure', function(req, res) {
+	res.sendFile(__dirname + '/text-adventure.html')
+});
+
 app.get('/demos', function(req, res) {
 	res.sendFile(__dirname + '/demos.html')
 });

@@ -1,0 +1,92 @@
+@media screen and (min-width:900px) {
+html {
+    height: 100%;
+}
+html, body {
+    height: 100%;
+	width: 100%;
+    min-height: 50%;
+	margin: auto;
+	background-color: #816283;
+	text-align: center;
+}
+h1 {
+	margin: auto;
+	font-family: 'Bungee Shade', cursive;
+	font-size: 4vw;
+}
+h2 {
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 1.5em;
+}
+ul {
+	font-family: 'Bungee Shade', cursive;
+    text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+}
+a:visited {
+	color: black;
+}
+a:hover {
+	color: #FF4444;
+}
+#home {
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+	font-family: 'Bungee Shade', cursive;
+	font-size: 3vw;
+}
+.panel-middle {
+	height: 75%;
+	width: auto;
+	margin: auto;
+	text-align: center;
+}
+.links {
+	margin-top: 20px;
+	list-style: none;
+	font-size: 4vw;
+	text-align: center;
+
+}
+
+.links > li {
+	display:inline-block;
+	margin: 20px;
+}
+
+#demo-links {
+	list-style: none;
+	text-align: center;
+	font-size: 4vw;
+	bottom: 50%;
+	top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+#demo-links > li {
+	display:inline-block;
+	margin: 20px;
+}
+#email {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 2em;
+}
+
+@media screen and (max-width:900px) {
+
+}
