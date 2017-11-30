@@ -71,8 +71,6 @@ function Display(inEl, outEl) {
     this.outBox = outEl;
 
     this.inBox.disabled = true;
-	
-	this.inputCount = 0;
 }
 
 Display.prototype.print = function(text, speed, cb) {
@@ -82,6 +80,7 @@ Display.prototype.print = function(text, speed, cb) {
         var callback = cb;
 
         console.log('displaying: ' + text);
+        this.outBox.value += '\r\n\r\n';
         this.inBox.disabled = true;
         
         //helper method used to bind the correct value of i in our loop to our function            
@@ -101,8 +100,6 @@ Display.prototype.print = function(text, speed, cb) {
         for (var i = 0; i < text.length; i++) {      
             setTimeout(helper(i), i * speed);
         }
-		
-		this.outBox.innerHTML += '<br />';
 }
 
 Display.prototype.printUserInput = function(text, speed, cb) {
@@ -112,18 +109,15 @@ Display.prototype.printUserInput = function(text, speed, cb) {
         var callback = cb;
 
         console.log('displaying: ' + text);
-		this.outBox.innerHTML += '<br /> <br />';
-		var userInputDisplay = '<div id="userInputDisplay' + that.inputCount + '"' + 'style="background-color: red"> </div>';
-		console.log(userInputDisplay);
-		this.outBox.innerHTML += userInputDisplay;
+        this.outBox.value += '\r\n\r\n';
         this.inBox.disabled = true;
         
         //helper method used to bind the correct value of i in our loop to our function            
         var helper = function(x) {
             var index = x;
             return function() {
-				console.log($('#userInputDisplay'));
-                $('#userInputDisplay').innerHTML += output.charAt(x);
+                that.outBox.innerHTML += output.charAt(x);
+				that.outBox.scrollTop = that.outBox.scrollHeight;
                 if (index === output.length - 1) {
                     that.inBox.disabled = false;
                     callback();
@@ -135,9 +129,6 @@ Display.prototype.printUserInput = function(text, speed, cb) {
         for (var i = 0; i < text.length; i++) {      
             setTimeout(helper(i), i * speed);
         }
-		
-		this.outBox.innerHTML += '<br />';
-
 }
 
 var Director = function(scn, disp, p) {
