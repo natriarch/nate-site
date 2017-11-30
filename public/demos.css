@@ -1,3 +1,4 @@
+@media screen and (min-width:1067px) {
 #home {
 	list-style: none;
 	float: left;
@@ -44,4 +45,57 @@
 	font-size: 2em;
 	color: #D8D8D8;
 
+}
+}
+
+@media screen and (max-width:1067px) {
+h1 {
+	font-size: 5em;
+}
+#home {
+	list-style: none;
+	float: left;
+	margin-left: 20px;
+	bottom: 0;
+	position: fixed;
+	font-family: 'Bungee Shade', cursive;
+	font-size: 5em;
+	padding-left: 20px;
+}
+
+#demo-container {
+	position:relative;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+
+#demo-links-container {
+	
+}
+
+#demo-links {
+	list-style: none;
+	text-align: center;
+	font-size: 4.1em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	padding-bottom: 60px;
+
+}
+
+#demo-links > li {
+	margin: 20px;
+}
+
+
+#instructions {
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 2em;
+	color: #D8D8D8;
+}
 }

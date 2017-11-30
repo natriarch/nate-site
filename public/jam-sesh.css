@@ -1,3 +1,4 @@
+@media screen and (min-width:1067px) {
 .container-keys {
 	width: 600px;
 	height: 150px;
@@ -14,4 +15,25 @@
 
 .user-count {
 	
+}
+}
+
+@media screen and (max-width:1067px) {
+.container-keys {
+	width: 600px;
+	height: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2%;
+	left: 0px;
+	right: 0px;
+}
+
+.instructions {
+	margin-top: 2%;
+}
+
+h1 {
+	font-size: 5em;
+}
 }

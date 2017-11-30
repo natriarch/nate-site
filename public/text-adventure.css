@@ -1,17 +1,40 @@
 #output {
 	margin: auto;
+	width: 75%;
+	height: 80%;
 	background-color: black;
 	color: #33FF5E;
 	text-align: left;
+	font-size: 2vw;
 }
 
 #input {
 	display: block;
 	margin: auto;
+	width: 75%;
+	font-size: 2vw;
 	background-color: black;
 	color: #33FF5E;
 }
 
-.user-input {
-	text-color: red;
+
+@media screen and (min-width:1500px) {
+#output {
+	margin: auto;
+	width: 75%;
+	height: 80%;
+	background-color: black;
+	color: #33FF5E;
+	text-align: left;
+	font-size: 1.5vw;
+}
+
+#input {
+	display: block;
+	margin: auto;
+	width: 75%;
+	font-size: 1.5vw;
+	background-color: black;
+	color: #33FF5E;
+}
 }

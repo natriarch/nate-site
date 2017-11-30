@@ -1,4 +1,4 @@
-@media screen and (min-width:900px) {
+@media screen and (min-width:1067px) {
 html {
     height: 100%;
 	position:relative;
@@ -57,6 +57,7 @@ a:hover {
 	padding: 10px;
 	bottom: 0px;
 	position: absolute;
+	background-color: #816283;
 }
 
 .links > li {
@@ -70,7 +71,102 @@ a:hover {
 	margin-bottom: 30px;
 	font-size: 2em;
 }
-
-@media screen and (max-width:900px) {
+}
+@media screen and (max-width:1067px) {
+html {
+    height: 100%;
+	position:relative;
+	min-height: 100%;
+}
+html, body {
+    height: 100%;
+	width: 100%;
+	margin: auto;
+	background-color: #816283;
+	text-align: center;
+}
+h1 {
+	margin: auto;
+	font-family: 'Bungee Shade', cursive;
+	font-size: 4em;
+	padding-bottom: 0;
+}
+h2 {
+	font-family: 'Archivo Black', sans-serif;
+	font-size: 1.5em;
+}
+ul {
+	font-family: 'Bungee Shade', cursive;
+    text-decoration: none;
+	padding: 0;
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	font-weight: bold;
+	text-align: center;
+		color:  black;
 
 }
+a:visited {
+	color: black;
+}
+a:hover {
+	color: #FF4444;
+}
+
+.panel-middle {
+	height: 75%;
+	width: auto;
+	margin: auto;
+	text-align: center;
+}
+.links {
+	list-style: none;
+	text-align: center;
+	font-size: 3em;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	bottom: 0px;
+	position: absolute;
+	background-color: #816283;
+}
+
+.links > li {
+	display: inline-block;
+	margin: 20px;
+}
+
+
+#email {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 2em;
+}
+}
+
+@media screen and (max-height:630px) {
+h1 {
+	margin: auto;
+	font-family: 'Bungee Shade', cursive;
+	font-size: 3em;
+	padding-bottom: 0;
+}
+.links {
+	list-style: none;
+	text-align: center;
+	font-size: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	padding: 10px;
+	bottom: 0px;
+	position: absolute;
+	background-color: #816283;
+}
+}
+
