@@ -1,14 +1,15 @@
 #output {
-	width:50%;
-	height:100%;
 	margin: auto;
-	background-color: white;
+	background-color: black;
+	color: #33FF5E;
+	text-align: left;
 }
 
 #input {
 	display: block;
-	width: 50%;
 	margin: auto;
+	background-color: black;
+	color: #33FF5E;
 }
 
 .user-input {

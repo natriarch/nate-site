@@ -87,7 +87,7 @@ Display.prototype.print = function(text, speed, cb) {
         var helper = function(x) {
             var index = x;
             return function() {
-                that.outBox.innerHTML += output.charAt(x);
+                that.outBox.value += output.charAt(x);
 				that.outBox.scrollTop = that.outBox.scrollHeight;
                 if (index === output.length - 1) {
                     that.inBox.disabled = false;
@@ -109,14 +109,14 @@ Display.prototype.printUserInput = function(text, speed, cb) {
         var callback = cb;
 
         console.log('displaying: ' + text);
-        this.outBox.value += '\r\n\r\n';
+        this.outBox.value += '\r\n\r\n  ~ ';
         this.inBox.disabled = true;
         
         //helper method used to bind the correct value of i in our loop to our function            
         var helper = function(x) {
             var index = x;
             return function() {
-                that.outBox.innerHTML += output.charAt(x);
+                that.outBox.value += output.charAt(x);
 				that.outBox.scrollTop = that.outBox.scrollHeight;
                 if (index === output.length - 1) {
                     that.inBox.disabled = false;
